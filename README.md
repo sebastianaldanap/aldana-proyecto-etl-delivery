@@ -19,7 +19,7 @@ Proyecto final del curso **Python for Data Analyst** de la especialización en D
 
 ## 🎯 1. Contexto de negocio
 
-Una startup de food delivery quiere expandirse en Estados Unidos. Antes de lanzar la app, el directorio necesita saber cómo operan los competidores: en qué ciudades hay más restaurantes, cómo se distribuyen los precios y si un precio más alto se traduce en mejor calidad.
+Una startup de food delivery quiere expandirse en Estados Unidos. Antes de lanzar la app y decidir en qué ciudades invertir, el directorio necesita saber cómo operan los competidores: en qué ciudades hay más restaurantes, cómo se distribuyen los precios y si un precio más alto se traduce en mejor calidad.
 
 ## 📦 2. Datos de partida
 
