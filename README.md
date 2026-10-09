@@ -12,7 +12,7 @@ Proyecto final del curso **Python for Data Analyst** de la especialización en D
 - [4. Problemas encontrados en los datos y cómo los resolví](#-4-problemas-encontrados-en-los-datos-y-cómo-los-resolví)
 - [5. Hallazgos clave](#-5-hallazgos-clave)
 - [6. Limitaciones](#-6-limitaciones)
-- [7. Recomendaciones para el CEO](#-7-recomendaciones-para-el-ceo)
+- [7. Conclusiones y recomendaciones para el CEO](#-7-conclusiones-y-recomendaciones-para-el-ceo)
 - [8. Tecnologías](#-8-tecnologías)
 - [9. Contenido del repositorio](#-9-contenido-del-repositorio)
 - [10. Autor](#-10-autor)
@@ -117,7 +117,7 @@ ORDER BY CASE rango_de_precios                              -- orden lógico, no
 
 ### 5.3 Menú por ciudad: Seattle es la más cara para comer
 
-El plato cuesta en promedio $11.98 en Seattle, $10.76 en Lynnwood y $9.52 en Milwaukee. La mediana confirma el mismo orden.
+El plato cuesta en promedio $11.98 en Seattle, $10.76 en Lynnwood y $9.52 en Milwaukee. La mediana confirma el mismo orden (Seattle $11.99, Lynnwood $8.99 y Milwaukee $7.19).
 
 ![Precio por plato en las 3 ciudades con más restaurantes](screenshots/03_pregunta_3_precio_por_ciudad.png)
 
@@ -188,7 +188,18 @@ Los resultados describen una muestra de **671 restaurantes**, no todo el mercado
 
 Los hallazgos son una primera señal para confirmar con datos más completos.
 
-## 💡 7. Recomendaciones para el CEO
+## 💡 7. Conclusiones y recomendaciones para el CEO
+
+### 7.1 Conclusiones
+
+- **Geografía:** Milwaukee (123 restaurantes) y Seattle (119) lideran dentro de la muestra; las otras tres ciudades del top 5 (Lynnwood, Everett y Bellevue) también están en Washington.
+- **Precios:** el mercado no es caro. El 67 % de los restaurantes es Económico y el 23 % Moderadamente caro; solo 4 son Caros y ninguno es Muy caro.
+- **Menú por ciudad:** Seattle es la ciudad más cara para comer ($11.98 por plato en promedio), seguida de Lynnwood ($10.76) y Milwaukee ($9.52).
+- **Precio y calidad:** un precio más alto no garantiza mejor experiencia; Económico (4.62) y Moderadamente caro (4.64) tienen casi el mismo puntaje.
+
+Estas conclusiones describen la muestra de 671 restaurantes (ver sección 6).
+
+### 7.2 Recomendaciones
 
 - **Empezar por Seattle y Milwaukee como primera validación.** Son las ciudades con más restaurantes en la muestra (119 y 123), pero la muestra cubre sobre todo Washington y Wisconsin, así que conviene confirmarlo con datos de más estados antes de decidir.
 - **Posicionarse en precios Económico y Moderado.** El 90 % de los restaurantes de la muestra está en esos dos rangos (el 99 % de los que tienen rango de precio), así que ahí está la competencia.
@@ -205,6 +216,8 @@ Python, Pandas, SQLAlchemy, SQLite, SQL, Matplotlib, Seaborn y Databricks (Free 
 - `proyecto_etl_delivery.ipynb`: cuaderno con todo el desarrollo.
 - `screenshots/`: capturas de los 4 gráficos del análisis.
 - `README.md`: este documento.
+
+La base `delivery_insights.db` no se incluye en el repositorio: se genera al ejecutar el cuaderno en Databricks.
 
 ## 👤 10. Autor
 
