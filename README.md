@@ -1,8 +1,6 @@
 # 🍔 Pipeline ETL e Inteligencia de Mercado: Food Delivery
 
-Proyecto final del curso **Python for Data Analyst** de la especialización en Data Analyst. Construí un pipeline ETL completo con Pandas y SQLite, y respondí cuatro preguntas de negocio con SQL y gráficos.
-
-> **En breve:** el mercado no es caro (el 90 % de los restaurantes es Económico o Moderadamente caro), Seattle es la ciudad más cara para comer ($11.98 por plato en promedio) y un precio más alto no se asocia a un mejor puntaje. Todo sale de una muestra de 671 restaurantes, el 96 % en Washington y Wisconsin.
+Análisis de la distribución geográfica, los precios y la calidad de 671 restaurantes de food delivery en Estados Unidos, construido con un pipeline ETL en Python, SQLite y SQL.
 
 ## 📑 Índice
 
@@ -115,7 +113,7 @@ ORDER BY CASE rango_de_precios                              -- orden lógico, no
 
 </details>
 
-### 5.3 Menú por ciudad: Seattle es la más cara para comer
+### 5.3 Menú por ciudad: Seattle es la más cara de las tres principales
 
 El plato cuesta en promedio $11.98 en Seattle, $10.76 en Lynnwood y $9.52 en Milwaukee. La mediana confirma el mismo orden (Seattle $11.99, Lynnwood $8.99 y Milwaukee $7.19).
 
@@ -194,7 +192,7 @@ Los hallazgos son una primera señal para confirmar con datos más completos.
 
 - **Geografía:** Milwaukee (123 restaurantes) y Seattle (119) lideran dentro de la muestra; las otras tres ciudades del top 5 (Lynnwood, Everett y Bellevue) también están en Washington.
 - **Precios:** el mercado no es caro. El 67 % de los restaurantes es Económico y el 23 % Moderadamente caro; solo 4 son Caros y ninguno es Muy caro.
-- **Menú por ciudad:** Seattle es la ciudad más cara para comer ($11.98 por plato en promedio), seguida de Lynnwood ($10.76) y Milwaukee ($9.52).
+- **Menú por ciudad:** Seattle es la más cara de las tres ciudades principales ($11.98 por plato en promedio), seguida de Lynnwood ($10.76) y Milwaukee ($9.52).
 - **Precio y calidad:** un precio más alto no garantiza mejor experiencia; Económico (4.62) y Moderadamente caro (4.64) tienen casi el mismo puntaje.
 
 Estas conclusiones describen la muestra de 671 restaurantes (ver sección 6).
